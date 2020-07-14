@@ -4,7 +4,6 @@ const path = require('path');
 const moduleReg = /^\/@modules\//;
 
 function resolveReact(root) {
-  const compilerPkgPath = path.join(root, 'node_modules');
 
   // 编译是在后端实现的，所以需要拿到的文件是 commonjs 规范
 

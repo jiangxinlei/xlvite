@@ -19,7 +19,7 @@ function rewriteImports(source) {
 
       // 如果开头是 react 和 react-dom，即从 node_modules 里依赖的包，就重写；开头是 \ 或者 . ，即 ./app 则不需要重写
       if (/^[^\/\.]/.test(id)) {
-        id = `/@modules/${id}`;  // 在依赖包的前面加 @modules 前缀
+        id = `/@modules/${id}`;  // 在依赖包的前面加 /@modules 前缀
         magicString.overwrite(s, e, id);  // 再用 magicString 的 overwrite 方法重写到 from '' 中
       }
     }
