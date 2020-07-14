@@ -388,4 +388,4 @@ function htmlRewritePlugin({ app, root }) {
 }
 
 exports.htmlRewritePlugin = htmlRewritePlugin;
-``
+```
